@@ -21,6 +21,7 @@ while True:
         prev=data
         print(data)
         continue
+    # '/' will be used as the exit key
     if cv2.waitKey(1) == ord("/"): 
         break
 cap.release() 
