@@ -1,7 +1,8 @@
 import segno
 import cv2
+
 #text for the qrcode
-qrcode=segno.make_qr("Hello World!")
+qrcode=segno.make_qr("1")
 #to save the qrcode locally with custsom size(scale), outside white area(border),light(change colour of white area),dark(change colour of dark area) 
 qrcode.save("basic_qrcode.png",scale=5,border=1,light="goldenrod")
 #To start the camera for capturing the qrcode
