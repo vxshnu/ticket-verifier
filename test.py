@@ -7,8 +7,9 @@ firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 data={
-    'test' : 'checking'
+    'test' : 'checking2'
 }
-doc_ref=db.collection('test').document()
+doc_ref=db.collection('test').document('third')
 doc_ref.set(data)
 print(doc_ref.id)
+
